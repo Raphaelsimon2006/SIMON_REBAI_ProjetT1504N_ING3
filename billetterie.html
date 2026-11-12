@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grand Prix de Monaco - Billetterie</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="conteneur barre">
+      <a href="../index.html" class="logo">GP <span>Monaco</span></a>
+      <nav>
+        <ul id="menu">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="circuit.html">Le circuit</a></li>
+          <li><a href="palmares.html">Palmarès</a></li>
+          <li><a href="billetterie.html" class="actif">Billetterie</a></li>
+        </ul>
+      </nav>
+      <div class="boutons-entete">
+        <button id="bouton-theme" title="Mode sombre">☾</button>
+        <button id="bouton-menu" title="Menu">☰</button>
+      </div>
+    </div>
+    <div class="damier"></div>
+    <div class="damier decale"></div>
+  </header>
+
+  <main class="conteneur">
+    <div class="haut-page">
+      <h1>Billetterie</h1>
+    </div>
+
+    <div class="reservation">
+      <form id="formulaire" class="carte" novalidate>
+        <p id="message-ok"></p>
+
+        <label for="nom">Nom</label>
+        <input type="text" id="nom">
+        <p class="erreur" id="erreur-nom"></p>
+
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom">
+        <p class="erreur" id="erreur-prenom"></p>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="nom@exemple.fr">
+        <p class="erreur" id="erreur-email"></p>
+        <label for="tribune">Tribune</label>
+        <select id="tribune">
+          <option value="0">-- Choisir une tribune --</option>
+          <option value="120">Pelouse du Rocher - 120 €</option>
+          <option value="290">Tribune du Port - 290 €</option>
+          <option value="450">Tribune de la Piscine - 450 €</option>
+          <option value="520">Tribune du Casino - 520 €</option>
+        </select>
+        <p class="erreur" id="erreur-tribune"></p>
+
+        <label for="places">Nombre de places (1 à 10)</label>
+        <input type="number" id="places" value="1" min="1" max="10">
+        <p class="erreur" id="erreur-places"></p>
+
+        <label>Jour</label>
+        <div class="jours">
+          <label><input type="radio" name="jour" value="vendredi"> Vendredi</label>
+          <label><input type="radio" name="jour" value="samedi"> Samedi</label>
+          <label><input type="radio" name="jour" value="dimanche" checked> Dimanche (course)</label>
+        </div>
+
+        <label for="message">Message (non obligatoire)</label>
+        <textarea id="message" rows="3"></textarea>
+
+        <label class="case"><input type="checkbox" id="conditions"> J'ai lu et j'accepte les conditions générales de vente</label>
+        <p class="erreur" id="erreur-conditions"></p>
+
+        <br>
+        <button type="submit" class="bouton">Réserver</button>
+      </form>
+      <div class="carte">
+        <h2>Tarifs</h2>
+        <table>
+          <thead>
+            <tr><th>Tribune</th><th>Prix</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pelouse du Rocher</td><td>120 €</td></tr>
+            <tr><td>Tribune du Port</td><td>290 €</td></tr>
+            <tr><td>Tribune de la Piscine</td><td>450 €</td></tr>
+            <tr><td>Tribune du Casino</td><td>520 €</td></tr>
+          </tbody>
+        </table>
+        <p class="total">Prix total : <span id="prix-total">0 €</span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="conteneur">
+      <p>Selim Rebai et Raphael Simon</p>
+      <nav>
+        <a href="a-propos.html">À propos</a>
+        <a href="billetterie.html">Billetterie</a>
+        <a href="#">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../js/script.js" defer></script>
+  <script src="../js/billetterie.js" defer></script>
+</body>
+</html>

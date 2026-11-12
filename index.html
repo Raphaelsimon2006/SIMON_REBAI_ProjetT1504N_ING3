@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grand Prix de Monaco - Accueil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="conteneur barre">
+      <a href="index.html" class="logo">GP <span>Monaco</span></a>
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html" class="actif">Accueil</a></li>
+          <li><a href="pages/histoire.html">Histoire</a></li>
+          <li><a href="pages/circuit.html">Le circuit</a></li>
+          <li><a href="pages/palmares.html">Palmarès</a></li>
+          <li><a href="pages/billetterie.html">Billetterie</a></li>
+        </ul>
+      </nav>
+      <div class="boutons-entete">
+        <button id="bouton-theme" title="Mode sombre">☾</button>
+        <button id="bouton-menu" title="Menu">☰</button>
+      </div>
+    </div>
+    <div class="damier"></div>
+    <div class="damier decale"></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-texte">
+        <h1>Grand Prix de Monaco</h1>
+        <p>La course la plus mythique de la Formule 1, depuis 1929</p>
+      </div>
+    </section>
+
+    <div class="conteneur">
+      <p class="presentation">Le Grand Prix de Monaco, c'est la course la plus connue de la Formule 1. Depuis 1929, les pilotes roulent dans les petites rues de Monte-Carlo, entre le port et le Casino, et la moindre erreur finit dans le mur.</p>
+
+      <p class="presentation">
+        <a href="pages/circuit.html" class="bouton">Découvrir le circuit</a>
+        <a href="pages/billetterie.html" class="bouton bouton-vide">Réserver une place</a>
+      </p>
+
+      <section class="compte">
+        <h2>Prochain Grand Prix dans</h2>
+        <div class="chiffres-compte">
+          <div><span id="jours">0</span>jours</div>
+          <div><span id="heures">0</span>heures</div>
+          <div><span id="minutes">0</span>min</div>
+          <div><span id="secondes">0</span>sec</div>
+        </div>
+        <p>Édition 2027 : du 4 au 6 juin</p>
+      </section>
+
+      <div class="carrousel">
+        <figure class="diapo active">
+          <img src="https://images.unsplash.com/photo-1752884991461-8ac432ad9266?w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" alt="Les F1 dans la montée après le départ">
+          <figcaption>Le départ : les voitures montent vers le Casino</figcaption>
+        </figure>
+        <figure class="diapo">
+          <img src="https://images.unsplash.com/photo-1683717618916-a6645d4a6261?w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" alt="Le port de Monaco vu d'en haut">
+          <figcaption>Le port de Monaco vu d'en haut</figcaption>
+        </figure>
+        <figure class="diapo">
+          <img src="https://images.unsplash.com/photo-1752886157329-03575ea8849f?w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" alt="La Ferrari de Charles Leclerc dans un virage">
+          <figcaption>Charles Leclerc et sa Ferrari en 2025</figcaption>
+        </figure>
+        <figure class="diapo">
+          <img src="https://images.unsplash.com/photo-1752884991452-b06745698a9d?w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" alt="Des F1 dans un virage serré">
+          <figcaption>Les F1 dans un virage serré</figcaption>
+        </figure>
+        <button class="fleche" id="precedent">‹</button>
+        <button class="fleche" id="suivant">›</button>
+      </div>
+
+      <h2>Explorer le site</h2>
+      <div class="grille">
+        <a href="pages/histoire.html" class="carte lien-page">
+          <h3>Histoire</h3>
+          <p>De la première course en 1929 au record d'Ayrton Senna.</p>
+        </a>
+        <a href="pages/circuit.html" class="carte lien-page">
+          <h3>Le circuit</h3>
+          <p>3,337 km, 19 virages et les passages les plus connus.</p>
+        </a>
+        <a href="pages/palmares.html" class="carte lien-page">
+          <h3>Palmarès</h3>
+          <p>Tous les vainqueurs depuis 2005 et les recordmen.</p>
+        </a>
+        <a href="pages/billetterie.html" class="carte lien-page">
+          <h3>Billetterie</h3>
+          <p>Choisis ta tribune, le prix se calcule tout seul.</p>
+        </a>
+      </div>
+
+      <div class="encadre">
+        <strong>Le saviez-vous ?</strong>
+        En 2024, Charles Leclerc est devenu le premier Monégasque à gagner le Grand Prix chez lui depuis Louis Chiron en 1931.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="conteneur">
+      <p>Selim Rebai et Raphael Simon</p>
+      <nav>
+        <a href="pages/a-propos.html">À propos</a>
+        <a href="pages/billetterie.html">Billetterie</a>
+        <a href="#">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+  <script src="js/accueil.js" defer></script>
+</body>
+</html>

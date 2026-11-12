@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grand Prix de Monaco - Palmarès</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="conteneur barre">
+      <a href="../index.html" class="logo">GP <span>Monaco</span></a>
+      <nav>
+        <ul id="menu">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="circuit.html">Le circuit</a></li>
+          <li><a href="palmares.html" class="actif">Palmarès</a></li>
+          <li><a href="billetterie.html">Billetterie</a></li>
+        </ul>
+      </nav>
+      <div class="boutons-entete">
+        <button id="bouton-theme" title="Mode sombre">☾</button>
+        <button id="bouton-menu" title="Menu">☰</button>
+      </div>
+    </div>
+    <div class="damier"></div>
+    <div class="damier decale"></div>
+  </header>
+
+  <main class="conteneur">
+    <div class="haut-page">
+      <h1>Palmarès</h1>
+      <p class="intro">Les vainqueurs du Grand Prix de Monaco depuis 2005</p>
+    </div>
+
+    <h2>Les vainqueurs</h2>
+    <label for="recherche">Rechercher :</label><br>
+    <input type="text" id="recherche" placeholder="Ex : Hamilton, Ferrari...">
+    <p id="compteur">22 résultats</p>
+
+    <div class="boite-tableau">
+      <table id="tableau">
+        <caption>Sources : formula1.com et formulaonehistory.com</caption>
+        <thead>
+          <tr>
+            <th>Année</th>
+            <th>Pilote</th>
+            <th>Pays</th>
+            <th>Écurie</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="rouge">2026</td><td>Kimi Antonelli</td><td>Italie</td><td>Mercedes</td></tr>
+          <tr><td class="rouge">2025</td><td>Lando Norris</td><td>Royaume-Uni</td><td>McLaren</td></tr>
+          <tr><td class="rouge">2024</td><td>Charles Leclerc</td><td>Monaco</td><td>Ferrari</td></tr>
+          <tr><td class="rouge">2023</td><td>Max Verstappen</td><td>Pays-Bas</td><td>Red Bull</td></tr>
+          <tr><td class="rouge">2022</td><td>Sergio Pérez</td><td>Mexique</td><td>Red Bull</td></tr>
+          <tr><td class="rouge">2021</td><td>Max Verstappen</td><td>Pays-Bas</td><td>Red Bull</td></tr>
+          <tr><td class="rouge">2020</td><td colspan="3"><em>Course annulée (Covid-19)</em></td></tr>
+          <tr><td class="rouge">2019</td><td>Lewis Hamilton</td><td>Royaume-Uni</td><td>Mercedes</td></tr>
+          <tr><td class="rouge">2018</td><td>Daniel Ricciardo</td><td>Australie</td><td>Red Bull</td></tr>
+          <tr><td class="rouge">2017</td><td>Sebastian Vettel</td><td>Allemagne</td><td>Ferrari</td></tr>
+          <tr><td class="rouge">2016</td><td>Lewis Hamilton</td><td>Royaume-Uni</td><td>Mercedes</td></tr>
+          <tr><td class="rouge">2015</td><td>Nico Rosberg</td><td>Allemagne</td><td>Mercedes</td></tr>
+          <tr><td class="rouge">2014</td><td>Nico Rosberg</td><td>Allemagne</td><td>Mercedes</td></tr>
+          <tr><td class="rouge">2013</td><td>Nico Rosberg</td><td>Allemagne</td><td>Mercedes</td></tr>
+          <tr><td class="rouge">2012</td><td>Mark Webber</td><td>Australie</td><td>Red Bull</td></tr>
+          <tr><td class="rouge">2011</td><td>Sebastian Vettel</td><td>Allemagne</td><td>Red Bull</td></tr>
+          <tr><td class="rouge">2010</td><td>Mark Webber</td><td>Australie</td><td>Red Bull</td></tr>
+          <tr><td class="rouge">2009</td><td>Jenson Button</td><td>Royaume-Uni</td><td>Brawn GP</td></tr>
+          <tr><td class="rouge">2008</td><td>Lewis Hamilton</td><td>Royaume-Uni</td><td>McLaren</td></tr>
+          <tr><td class="rouge">2007</td><td>Fernando Alonso</td><td>Espagne</td><td>McLaren</td></tr>
+          <tr><td class="rouge">2006</td><td>Fernando Alonso</td><td>Espagne</td><td>Renault</td></tr>
+          <tr><td class="rouge">2005</td><td>Kimi Räikkönen</td><td>Finlande</td><td>McLaren</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="deux-colonnes">
+      <div>
+        <h2>Les recordmen</h2>
+        <div class="boite-tableau">
+          <table>
+            <thead>
+              <tr><th>Pilote</th><th>Victoires</th><th>Années</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Ayrton Senna</td><td class="rouge">6</td><td>1987, 1989 à 1993</td></tr>
+              <tr><td>Graham Hill</td><td class="rouge">5</td><td>1963, 1964, 1965, 1968, 1969</td></tr>
+              <tr><td>Michael Schumacher</td><td class="rouge">5</td><td>1994, 1995, 1997, 1999, 2001</td></tr>
+              <tr><td>Alain Prost</td><td class="rouge">4</td><td>1984, 1985, 1986, 1988</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><em>L'écurie qui a le plus gagné à Monaco : McLaren, avec 16 victoires.</em></p>
+      </div>
+
+      <div>
+        <h2>Podium 2026</h2>
+        <div class="boite-tableau">
+          <table>
+            <thead>
+              <tr><th>Place</th><th>Pilote</th><th>Écurie</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="rouge">1</td><td>Kimi Antonelli</td><td>Mercedes</td></tr>
+              <tr><td class="rouge">2</td><td>Lewis Hamilton</td><td>Ferrari</td></tr>
+              <tr><td class="rouge">3</td><td>Isack Hadjar</td><td>Red Bull</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="conteneur">
+      <p>Selim Rebai et Raphael Simon</p>
+      <nav>
+        <a href="a-propos.html">À propos</a>
+        <a href="billetterie.html">Billetterie</a>
+        <a href="#">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../js/script.js" defer></script>
+  <script src="../js/palmares.js" defer></script>
+</body>
+</html>
